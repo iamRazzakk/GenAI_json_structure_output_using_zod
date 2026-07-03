@@ -27,7 +27,7 @@ const createChatModel = (): { provider: Provider; model: any } => {
       provider: "gemini",
       model: new ChatGoogleGenerativeAI({
         ...base,
-        model: "gemini-2.0-flash-lite",
+        model: "gemini-2.5-flash",
       }),
     };
   }
@@ -44,7 +44,10 @@ const createChatModel = (): { provider: Provider; model: any } => {
     provider: "gemini",
     model: new ChatGoogleGenerativeAI({
       ...base,
-      model: "gemini-2.0-flash-lite",
+      model: "gemini-2.5-flash",
     }),
   };
 };
+
+
+export default createChatModel;
